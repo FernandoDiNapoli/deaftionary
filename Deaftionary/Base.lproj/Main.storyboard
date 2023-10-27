@@ -46,6 +46,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="FGt-2U-xIA" kind="presentation" modalPresentationStyle="fullScreen" id="4gx-pe-UgU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdB-yC-eP3">
                                 <rect key="frame" x="150" y="631" width="114" height="30"/>
@@ -53,6 +56,9 @@
                                 <state key="normal" title="Crear usuario">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="qSt-zG-xrU" kind="presentation" modalPresentationStyle="fullScreen" id="AWG-7B-FT2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -80,10 +86,10 @@
             </objects>
             <point key="canvasLocation" x="141" y="124"/>
         </scene>
-        <!--View Controller-->
+        <!--PantallaBienvenida-->
         <scene sceneID="1Hw-ON-84i">
             <objects>
-                <viewController id="FGt-2U-xIA" customClass="ViewController" customModule="Deaftionary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PantallaBienvenida" id="FGt-2U-xIA" customClass="PantallaBienvenida" customModule="Deaftionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zWm-3a-LmE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,15 +145,16 @@
                             <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="u2e-5D-OrQ" secondAttribute="trailing" constant="125" id="vJA-Ka-2Ve"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="S8t-Du-Bq5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rJK-UX-2pz" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="992.75362318840587" y="123.88392857142857"/>
         </scene>
-        <!--View Controller-->
+        <!--CrearCuenta-->
         <scene sceneID="mdK-vH-nvp">
             <objects>
-                <viewController id="qSt-zG-xrU" customClass="ViewController" customModule="Deaftionary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="CrearCuenta" id="qSt-zG-xrU" customClass="CrearCuenta" customModule="Deaftionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tw6-mU-mX3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,6 +202,9 @@
                                 <state key="normal" title="Continuar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="FGt-2U-xIA" kind="presentation" modalPresentationStyle="fullScreen" id="ViW-Kq-g1o"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rTD-ot-XJ0"/>
@@ -225,12 +235,16 @@
                             <constraint firstItem="N1t-xZ-HB9" firstAttribute="leading" secondItem="rTD-ot-XJ0" secondAttribute="leading" constant="60" id="wEb-uH-YkH"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="P1i-gr-Ssw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1mV-sE-Oe7" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="141" y="770"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ViW-Kq-g1o"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
