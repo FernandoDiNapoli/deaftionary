@@ -130,15 +130,18 @@
                                 <state key="normal" title="Aprender señas">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="axe-BP-NlM" kind="presentation" modalPresentationStyle="fullScreen" id="2KV-ge-FF5"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8p-g2-hqT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8p-g2-hqT">
                                 <rect key="frame" x="50" y="114" width="114" height="30"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Volver">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpo-b0-nQD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpo-b0-nQD">
                                 <rect key="frame" x="314" y="114" width="70" height="30"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Salir">
@@ -151,6 +154,7 @@
                         <constraints>
                             <constraint firstItem="L8p-g2-hqT" firstAttribute="leading" secondItem="1ZC-Sc-lMP" secondAttribute="leading" constant="50" id="39o-gT-c3O"/>
                             <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="L8p-g2-hqT" secondAttribute="trailing" constant="250" id="3um-fL-DKJ"/>
+                            <constraint firstItem="hpo-b0-nQD" firstAttribute="top" secondItem="1ZC-Sc-lMP" secondAttribute="top" constant="70" id="44F-EN-si5"/>
                             <constraint firstItem="bzH-vv-6pq" firstAttribute="top" secondItem="1ZC-Sc-lMP" secondAttribute="top" constant="150" id="7jI-E4-ozN"/>
                             <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="rdG-Vp-naW" secondAttribute="trailing" constant="125" id="ATo-8N-c6Z"/>
                             <constraint firstItem="hpo-b0-nQD" firstAttribute="leading" secondItem="L8p-g2-hqT" secondAttribute="trailing" constant="150" id="Bbj-JZ-Idh"/>
@@ -164,6 +168,7 @@
                             <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="hpo-b0-nQD" secondAttribute="trailing" constant="30" id="kIy-PE-lzc"/>
                             <constraint firstItem="pVS-GD-6Fd" firstAttribute="leading" secondItem="1ZC-Sc-lMP" secondAttribute="leading" constant="50" id="leu-19-Etp"/>
                             <constraint firstItem="u2e-5D-OrQ" firstAttribute="leading" secondItem="1ZC-Sc-lMP" secondAttribute="leading" constant="125" id="noS-Eb-C8j"/>
+                            <constraint firstItem="L8p-g2-hqT" firstAttribute="top" secondItem="1ZC-Sc-lMP" secondAttribute="top" constant="70" id="uwj-qj-sgF"/>
                             <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="u2e-5D-OrQ" secondAttribute="trailing" constant="125" id="vJA-Ka-2Ve"/>
                         </constraints>
                     </view>
@@ -220,7 +225,7 @@
                                     <segue destination="cRR-B2-rqS" kind="presentation" modalPresentationStyle="fullScreen" id="KTb-ay-s88"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wd-2r-Ucg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wd-2r-Ucg">
                                 <rect key="frame" x="314" y="114" width="70" height="30"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Salir">
@@ -243,6 +248,7 @@
                             <constraint firstItem="5Np-FU-Icb" firstAttribute="leading" secondItem="l64-iJ-bD9" secondAttribute="leading" constant="70" id="8T4-bO-egy"/>
                             <constraint firstItem="9Wd-2r-Ucg" firstAttribute="leading" secondItem="neP-ec-Dy4" secondAttribute="trailing" constant="150" id="8fC-Ie-hdD"/>
                             <constraint firstItem="X4M-Sz-eRy" firstAttribute="leading" secondItem="l64-iJ-bD9" secondAttribute="leading" constant="50" id="BD8-14-V6L"/>
+                            <constraint firstItem="9Wd-2r-Ucg" firstAttribute="top" secondItem="l64-iJ-bD9" secondAttribute="top" constant="70" id="D8v-5F-UEh"/>
                             <constraint firstItem="l64-iJ-bD9" firstAttribute="trailing" secondItem="neP-ec-Dy4" secondAttribute="trailing" constant="250" id="HDk-ul-xoj"/>
                             <constraint firstItem="l64-iJ-bD9" firstAttribute="trailing" secondItem="9Wd-2r-Ucg" secondAttribute="trailing" constant="30" id="Ly7-MM-Sba"/>
                             <constraint firstItem="l64-iJ-bD9" firstAttribute="trailing" secondItem="x7h-x2-USm" secondAttribute="trailing" constant="20" id="RGl-ne-N74"/>
@@ -309,7 +315,7 @@
                                     <segue destination="NvO-i5-MUc" kind="presentation" modalPresentationStyle="fullScreen" id="YA9-cs-gCI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ug-uO-EUW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ug-uO-EUW">
                                 <rect key="frame" x="314" y="114" width="70" height="30"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Salir">
@@ -336,6 +342,7 @@
                             <constraint firstItem="3Nv-Zt-V0b" firstAttribute="top" secondItem="YV0-mO-7Mw" secondAttribute="bottom" constant="400" id="GRb-85-Jhd"/>
                             <constraint firstItem="3Nv-Zt-V0b" firstAttribute="leading" secondItem="ifE-iT-o8S" secondAttribute="leading" constant="70" id="H0I-qr-put"/>
                             <constraint firstItem="4Ug-uO-EUW" firstAttribute="leading" secondItem="eW4-Yo-X5a" secondAttribute="trailing" constant="150" id="HhD-6R-Njo"/>
+                            <constraint firstItem="4Ug-uO-EUW" firstAttribute="top" secondItem="ifE-iT-o8S" secondAttribute="top" constant="70" id="LC8-0e-FEq"/>
                             <constraint firstItem="YV0-mO-7Mw" firstAttribute="leading" secondItem="ifE-iT-o8S" secondAttribute="leading" constant="50" id="Tsz-kq-PCS"/>
                             <constraint firstItem="ifE-iT-o8S" firstAttribute="trailing" secondItem="Dwo-8j-KWG" secondAttribute="trailing" constant="20" id="UDT-WJ-Koi"/>
                             <constraint firstItem="ifE-iT-o8S" firstAttribute="trailing" secondItem="4Ug-uO-EUW" secondAttribute="trailing" constant="30" id="WrE-hh-FUZ"/>
@@ -465,7 +472,7 @@
                                     <segue destination="FGt-2U-xIA" kind="presentation" modalPresentationStyle="fullScreen" id="wo3-8N-7Hw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQM-no-8Kw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQM-no-8Kw">
                                 <rect key="frame" x="314" y="114" width="70" height="30"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Salir">
@@ -501,6 +508,7 @@
                         <constraints>
                             <constraint firstItem="xZk-DH-feS" firstAttribute="top" secondItem="vig-Mo-Cti" secondAttribute="top" constant="70" id="6eO-KJ-XQx"/>
                             <constraint firstItem="ZrI-nH-whC" firstAttribute="leading" secondItem="zBu-Du-kaf" secondAttribute="leading" constant="186" id="7KO-jy-thr"/>
+                            <constraint firstItem="xQM-no-8Kw" firstAttribute="top" secondItem="vig-Mo-Cti" secondAttribute="top" constant="70" id="BYX-Me-bjy"/>
                             <constraint firstItem="vig-Mo-Cti" firstAttribute="trailing" secondItem="xQM-no-8Kw" secondAttribute="trailing" constant="30" id="Bnm-ZQ-h27"/>
                             <constraint firstItem="WTm-w5-cJo" firstAttribute="top" secondItem="xZk-DH-feS" secondAttribute="bottom" constant="50" id="K1c-Yv-Kz8"/>
                             <constraint firstItem="xZk-DH-feS" firstAttribute="leading" secondItem="vig-Mo-Cti" secondAttribute="leading" constant="50" id="NOS-1P-C3Y"/>
@@ -574,9 +582,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JvO-XG-K4Q"/>
-        <segue reference="ua9-KO-CjW"/>
-        <segue reference="oea-He-O2O"/>
+        <segue reference="KTb-ay-s88"/>
+        <segue reference="9Lz-0P-76e"/>
+        <segue reference="qHX-uM-Kbl"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
