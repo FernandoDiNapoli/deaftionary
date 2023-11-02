@@ -230,6 +230,12 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="of0-zg-d0t"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Teclado" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iBn-0s-L6N">
+                                <rect key="frame" x="89" y="374" width="237" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="86"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l64-iJ-bD9"/>
                         <color key="backgroundColor" red="0.29647122879999999" green="0.90296118810000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -313,6 +319,12 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="oea-He-O2O"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Teclado" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xfP-zE-PHh">
+                                <rect key="frame" x="89" y="378" width="237" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="86"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ifE-iT-o8S"/>
                         <color key="backgroundColor" red="0.29647122879999999" green="0.90296118810000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -337,7 +349,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hyf-NG-1p7" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1810" y="124"/>
+            <point key="canvasLocation" x="1808.6956521739132" y="123.88392857142857"/>
         </scene>
         <!--CrearCuenta-->
         <scene sceneID="mdK-vH-nvp">
@@ -563,8 +575,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="JvO-XG-K4Q"/>
-        <segue reference="wo3-8N-7Hw"/>
-        <segue reference="3ur-jU-HiT"/>
+        <segue reference="ua9-KO-CjW"/>
+        <segue reference="oea-He-O2O"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
