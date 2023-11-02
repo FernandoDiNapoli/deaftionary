@@ -469,6 +469,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leccion 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEU-Xu-Ghr">
+                                <rect key="frame" x="186" y="462" width="71" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leccion 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1E-ez-ct1">
+                                <rect key="frame" x="186" y="506" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vig-Mo-Cti"/>
                         <color key="backgroundColor" red="0.29647122879999999" green="0.90296118810000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -549,8 +563,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="JvO-XG-K4Q"/>
-        <segue reference="9Lz-0P-76e"/>
-        <segue reference="qHX-uM-Kbl"/>
+        <segue reference="wo3-8N-7Hw"/>
+        <segue reference="3ur-jU-HiT"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
