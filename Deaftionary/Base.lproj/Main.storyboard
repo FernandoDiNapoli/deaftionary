@@ -115,7 +115,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2e-5D-OrQ">
-                                <rect key="frame" x="125" y="341.5" width="164" height="30"/>
+                                <rect key="frame" x="125" y="462" width="164" height="30"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <state key="normal" title="Traducir">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -125,7 +125,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdG-Vp-naW">
-                                <rect key="frame" x="125" y="401.5" width="164" height="30"/>
+                                <rect key="frame" x="125" y="522" width="164" height="30"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <state key="normal" title="Aprender señas">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -148,6 +148,13 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyP-Rg-id5">
+                                <rect key="frame" x="125" y="582" width="164" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Traducciones favoritas">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1ZC-Sc-lMP"/>
                         <color key="backgroundColor" red="0.29647122879999999" green="0.90296118810000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -161,13 +168,16 @@
                             <constraint firstItem="rdG-Vp-naW" firstAttribute="leading" secondItem="1ZC-Sc-lMP" secondAttribute="leading" constant="125" id="CP8-fZ-ONe"/>
                             <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="pVS-GD-6Fd" secondAttribute="trailing" constant="50" id="Lrz-0h-3jZ"/>
                             <constraint firstItem="bzH-vv-6pq" firstAttribute="leading" secondItem="1ZC-Sc-lMP" secondAttribute="leading" constant="20" id="Lyq-hy-KaX"/>
+                            <constraint firstItem="lyP-Rg-id5" firstAttribute="leading" secondItem="1ZC-Sc-lMP" secondAttribute="leading" constant="125" id="QUt-vX-yrj"/>
+                            <constraint firstItem="lyP-Rg-id5" firstAttribute="top" secondItem="rdG-Vp-naW" secondAttribute="bottom" constant="30" id="Sh0-kb-p8O"/>
                             <constraint firstItem="pVS-GD-6Fd" firstAttribute="top" secondItem="bzH-vv-6pq" secondAttribute="bottom" constant="30" id="XgT-ug-cXn"/>
-                            <constraint firstItem="u2e-5D-OrQ" firstAttribute="top" secondItem="pVS-GD-6Fd" secondAttribute="bottom" constant="50" id="Yzc-eB-aNU"/>
                             <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="bzH-vv-6pq" secondAttribute="trailing" constant="20" id="b9N-Bf-2k1"/>
+                            <constraint firstItem="1ZC-Sc-lMP" firstAttribute="bottom" secondItem="lyP-Rg-id5" secondAttribute="bottom" constant="250" id="h4F-QD-2gp"/>
                             <constraint firstItem="rdG-Vp-naW" firstAttribute="top" secondItem="u2e-5D-OrQ" secondAttribute="bottom" constant="30" id="hZp-YH-Dvu"/>
                             <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="hpo-b0-nQD" secondAttribute="trailing" constant="30" id="kIy-PE-lzc"/>
                             <constraint firstItem="pVS-GD-6Fd" firstAttribute="leading" secondItem="1ZC-Sc-lMP" secondAttribute="leading" constant="50" id="leu-19-Etp"/>
                             <constraint firstItem="u2e-5D-OrQ" firstAttribute="leading" secondItem="1ZC-Sc-lMP" secondAttribute="leading" constant="125" id="noS-Eb-C8j"/>
+                            <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="lyP-Rg-id5" secondAttribute="trailing" constant="125" id="qao-b3-sQs"/>
                             <constraint firstItem="L8p-g2-hqT" firstAttribute="top" secondItem="1ZC-Sc-lMP" secondAttribute="top" constant="70" id="uwj-qj-sgF"/>
                             <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="u2e-5D-OrQ" secondAttribute="trailing" constant="125" id="vJA-Ka-2Ve"/>
                         </constraints>
@@ -560,6 +570,7 @@
         <!--PantallaAprender-->
         <scene sceneID="fx8-fh-9Cs">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uQ9-Td-eYg" sceneMemberID="firstResponder"/>
                 <viewController title="PantallaAprender" id="axe-BP-NlM" customClass="PantallaBienvenida" customModule="Deaftionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vTQ-Ua-pPv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -608,13 +619,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="fwu-as-yZd"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uQ9-Td-eYg" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="993" y="-593"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KTb-ay-s88"/>
+        <segue reference="JvO-XG-K4Q"/>
         <segue reference="zpM-Vg-SFE"/>
         <segue reference="of0-zg-d0t"/>
     </inferredMetricsTieBreakers>
