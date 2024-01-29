@@ -235,22 +235,33 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="of0-zg-d0t"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Teclado" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iBn-0s-L6N">
-                                <rect key="frame" x="89" y="374" width="237" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="86"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iBn-0s-L6N">
+                                <rect key="frame" x="89" y="374" width="237" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqk-ae-47l">
+                                <rect key="frame" x="70" y="631" width="274" height="29"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Traducir">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" name="AccentColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l64-iJ-bD9"/>
                         <color key="backgroundColor" red="0.29647122879999999" green="0.90296118810000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="l64-iJ-bD9" firstAttribute="trailing" secondItem="cqk-ae-47l" secondAttribute="trailing" constant="70" id="4NX-aB-O1f"/>
                             <constraint firstItem="5Np-FU-Icb" firstAttribute="leading" secondItem="l64-iJ-bD9" secondAttribute="leading" constant="70" id="8T4-bO-egy"/>
                             <constraint firstItem="9Wd-2r-Ucg" firstAttribute="leading" secondItem="neP-ec-Dy4" secondAttribute="trailing" constant="150" id="8fC-Ie-hdD"/>
                             <constraint firstItem="X4M-Sz-eRy" firstAttribute="leading" secondItem="l64-iJ-bD9" secondAttribute="leading" constant="50" id="BD8-14-V6L"/>
+                            <constraint firstItem="cqk-ae-47l" firstAttribute="leading" secondItem="l64-iJ-bD9" secondAttribute="leading" constant="70" id="CfQ-xi-YeM"/>
                             <constraint firstItem="9Wd-2r-Ucg" firstAttribute="top" secondItem="l64-iJ-bD9" secondAttribute="top" constant="70" id="D8v-5F-UEh"/>
                             <constraint firstItem="l64-iJ-bD9" firstAttribute="trailing" secondItem="neP-ec-Dy4" secondAttribute="trailing" constant="250" id="HDk-ul-xoj"/>
                             <constraint firstItem="l64-iJ-bD9" firstAttribute="trailing" secondItem="9Wd-2r-Ucg" secondAttribute="trailing" constant="30" id="Ly7-MM-Sba"/>
+                            <constraint firstItem="cqk-ae-47l" firstAttribute="top" secondItem="iBn-0s-L6N" secondAttribute="bottom" constant="31" id="Qq0-Gm-dQa"/>
                             <constraint firstItem="l64-iJ-bD9" firstAttribute="trailing" secondItem="x7h-x2-USm" secondAttribute="trailing" constant="20" id="RGl-ne-N74"/>
                             <constraint firstItem="5Np-FU-Icb" firstAttribute="top" secondItem="X4M-Sz-eRy" secondAttribute="bottom" constant="400" id="Rha-vk-sgG"/>
                             <constraint firstItem="l64-iJ-bD9" firstAttribute="trailing" secondItem="5Np-FU-Icb" secondAttribute="trailing" constant="70" id="Shs-lw-gR8"/>
@@ -325,12 +336,18 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="oea-He-O2O"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Teclado" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xfP-zE-PHh">
-                                <rect key="frame" x="89" y="378" width="237" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="86"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xfP-zE-PHh">
+                                <rect key="frame" x="89" y="378" width="237" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdZ-CU-hHB">
+                                <rect key="frame" x="70" y="630" width="274" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Traducir">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ifE-iT-o8S"/>
                         <color key="backgroundColor" red="0.29647122879999999" green="0.90296118810000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -342,12 +359,15 @@
                             <constraint firstItem="3Nv-Zt-V0b" firstAttribute="top" secondItem="YV0-mO-7Mw" secondAttribute="bottom" constant="400" id="GRb-85-Jhd"/>
                             <constraint firstItem="3Nv-Zt-V0b" firstAttribute="leading" secondItem="ifE-iT-o8S" secondAttribute="leading" constant="70" id="H0I-qr-put"/>
                             <constraint firstItem="4Ug-uO-EUW" firstAttribute="leading" secondItem="eW4-Yo-X5a" secondAttribute="trailing" constant="150" id="HhD-6R-Njo"/>
+                            <constraint firstItem="UdZ-CU-hHB" firstAttribute="leading" secondItem="ifE-iT-o8S" secondAttribute="leading" constant="70" id="K7Y-gM-zpt"/>
                             <constraint firstItem="4Ug-uO-EUW" firstAttribute="top" secondItem="ifE-iT-o8S" secondAttribute="top" constant="70" id="LC8-0e-FEq"/>
                             <constraint firstItem="YV0-mO-7Mw" firstAttribute="leading" secondItem="ifE-iT-o8S" secondAttribute="leading" constant="50" id="Tsz-kq-PCS"/>
                             <constraint firstItem="ifE-iT-o8S" firstAttribute="trailing" secondItem="Dwo-8j-KWG" secondAttribute="trailing" constant="20" id="UDT-WJ-Koi"/>
                             <constraint firstItem="ifE-iT-o8S" firstAttribute="trailing" secondItem="4Ug-uO-EUW" secondAttribute="trailing" constant="30" id="WrE-hh-FUZ"/>
+                            <constraint firstItem="ifE-iT-o8S" firstAttribute="trailing" secondItem="UdZ-CU-hHB" secondAttribute="trailing" constant="70" id="Xbd-UC-sKQ"/>
                             <constraint firstItem="YV0-mO-7Mw" firstAttribute="top" secondItem="Dwo-8j-KWG" secondAttribute="bottom" constant="30" id="aqZ-1R-Obl"/>
                             <constraint firstItem="eW4-Yo-X5a" firstAttribute="top" secondItem="ifE-iT-o8S" secondAttribute="top" constant="70" id="kSh-sG-roZ"/>
+                            <constraint firstItem="UdZ-CU-hHB" firstAttribute="top" secondItem="xfP-zE-PHh" secondAttribute="bottom" constant="31" id="nxw-Rt-LAx"/>
                             <constraint firstItem="Dwo-8j-KWG" firstAttribute="leading" secondItem="ifE-iT-o8S" secondAttribute="leading" constant="20" id="paV-gW-Xyt"/>
                             <constraint firstItem="Dwo-8j-KWG" firstAttribute="top" secondItem="ifE-iT-o8S" secondAttribute="top" constant="150" id="sm0-x9-2Xf"/>
                         </constraints>
@@ -379,32 +399,32 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DVD-om-PWd">
-                                <rect key="frame" x="90" y="333" width="234" height="34"/>
+                                <rect key="frame" x="90" y="283" width="234" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellido" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SBk-PQ-e9K">
-                                <rect key="frame" x="90" y="397" width="234" height="34"/>
+                                <rect key="frame" x="90" y="347" width="234" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Edad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FpB-GL-Ttm">
-                                <rect key="frame" x="90" y="461" width="234" height="34"/>
+                                <rect key="frame" x="90" y="411" width="234" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sexo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C71-Td-fvR">
-                                <rect key="frame" x="90" y="525" width="234" height="34"/>
+                                <rect key="frame" x="90" y="475" width="234" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tut-VI-zzY">
-                                <rect key="frame" x="90" y="589" width="234" height="34"/>
+                                <rect key="frame" x="90" y="539" width="234" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9Y-Ly-PlP">
-                                <rect key="frame" x="150" y="693" width="114" height="30"/>
+                                <rect key="frame" x="150" y="687" width="114" height="30"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <state key="normal" title="Continuar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -413,11 +433,17 @@
                                     <segue destination="FGt-2U-xIA" kind="presentation" modalPresentationStyle="fullScreen" id="ViW-Kq-g1o"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K9X-PC-zKw">
+                                <rect key="frame" x="90" y="603" width="234" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rTD-ot-XJ0"/>
                         <color key="backgroundColor" red="0.29647122879999999" green="0.90296118810000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SBk-PQ-e9K" firstAttribute="leading" secondItem="rTD-ot-XJ0" secondAttribute="leading" constant="90" id="0uR-rg-mn6"/>
+                            <constraint firstItem="U9Y-Ly-PlP" firstAttribute="top" secondItem="K9X-PC-zKw" secondAttribute="bottom" constant="50" id="3H7-rR-jJI"/>
                             <constraint firstItem="C71-Td-fvR" firstAttribute="leading" secondItem="rTD-ot-XJ0" secondAttribute="leading" constant="90" id="5QW-Ts-CJm"/>
                             <constraint firstItem="FpB-GL-Ttm" firstAttribute="top" secondItem="SBk-PQ-e9K" secondAttribute="bottom" constant="30" id="7Gk-D2-TJn"/>
                             <constraint firstItem="rTD-ot-XJ0" firstAttribute="trailing" secondItem="DVD-om-PWd" secondAttribute="trailing" constant="90" id="DWe-GC-lKh"/>
@@ -431,14 +457,14 @@
                             <constraint firstItem="rTD-ot-XJ0" firstAttribute="trailing" secondItem="C71-Td-fvR" secondAttribute="trailing" constant="90" id="Vbh-Cu-voF"/>
                             <constraint firstItem="C71-Td-fvR" firstAttribute="top" secondItem="FpB-GL-Ttm" secondAttribute="bottom" constant="30" id="WKG-xj-doI"/>
                             <constraint firstItem="Tut-VI-zzY" firstAttribute="leading" secondItem="rTD-ot-XJ0" secondAttribute="leading" constant="90" id="Z3I-mq-WbQ"/>
-                            <constraint firstItem="DVD-om-PWd" firstAttribute="top" secondItem="N1t-xZ-HB9" secondAttribute="bottom" constant="100" id="a9r-7h-a52"/>
                             <constraint firstItem="FpB-GL-Ttm" firstAttribute="leading" secondItem="rTD-ot-XJ0" secondAttribute="leading" constant="90" id="bRp-dQ-Sab"/>
                             <constraint firstItem="rTD-ot-XJ0" firstAttribute="trailing" secondItem="N1t-xZ-HB9" secondAttribute="trailing" constant="60" id="cOA-GI-5wz"/>
                             <constraint firstItem="N1t-xZ-HB9" firstAttribute="top" secondItem="rTD-ot-XJ0" secondAttribute="top" constant="150" id="jES-lT-L54"/>
                             <constraint firstItem="U9Y-Ly-PlP" firstAttribute="leading" secondItem="rTD-ot-XJ0" secondAttribute="leading" constant="150" id="kJ9-HM-jox"/>
-                            <constraint firstItem="U9Y-Ly-PlP" firstAttribute="top" secondItem="Tut-VI-zzY" secondAttribute="bottom" constant="70" id="oRe-jS-v8k"/>
+                            <constraint firstItem="K9X-PC-zKw" firstAttribute="top" secondItem="Tut-VI-zzY" secondAttribute="bottom" constant="30" id="oEe-1k-Mu9"/>
                             <constraint firstItem="Tut-VI-zzY" firstAttribute="top" secondItem="C71-Td-fvR" secondAttribute="bottom" constant="30" id="t2P-Jy-bS2"/>
                             <constraint firstItem="rTD-ot-XJ0" firstAttribute="trailing" secondItem="FpB-GL-Ttm" secondAttribute="trailing" constant="90" id="tLa-2H-J39"/>
+                            <constraint firstItem="DVD-om-PWd" firstAttribute="top" secondItem="N1t-xZ-HB9" secondAttribute="bottom" constant="50" id="twO-fl-sXK"/>
                             <constraint firstItem="N1t-xZ-HB9" firstAttribute="leading" secondItem="rTD-ot-XJ0" secondAttribute="leading" constant="60" id="wEb-uH-YkH"/>
                         </constraints>
                     </view>
@@ -582,9 +608,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="YA9-cs-gCI"/>
         <segue reference="KTb-ay-s88"/>
-        <segue reference="9Lz-0P-76e"/>
-        <segue reference="qHX-uM-Kbl"/>
+        <segue reference="ViW-Kq-g1o"/>
+        <segue reference="oea-He-O2O"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
