@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		828D6FC52B84BB7A00DE3E18 /* PantallaLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828D6FC42B84BB7A00DE3E18 /* PantallaLoginViewController.swift */; };
 		82C221752AEBA2160054C5AC /* PantallaBienvenida.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C221742AEBA2160054C5AC /* PantallaBienvenida.swift */; };
 		82C221782AEBA28C0054C5AC /* CrearCuenta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C221772AEBA28C0054C5AC /* CrearCuenta.swift */; };
 		A2EBB5762ADFE6EB00704C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EBB5752ADFE6EB00704C75 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		828D6FC42B84BB7A00DE3E18 /* PantallaLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaLoginViewController.swift; sourceTree = "<group>"; };
 		82C221742AEBA2160054C5AC /* PantallaBienvenida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaBienvenida.swift; sourceTree = "<group>"; };
 		82C221772AEBA28C0054C5AC /* CrearCuenta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearCuenta.swift; sourceTree = "<group>"; };
 		A2EBB5722ADFE6EB00704C75 /* Deaftionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deaftionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				A2EBB5752ADFE6EB00704C75 /* AppDelegate.swift */,
+				828D6FC42B84BB7A00DE3E18 /* PantallaLoginViewController.swift */,
 				A2EBB5772ADFE6EB00704C75 /* SceneDelegate.swift */,
 				A2EBB57B2ADFE6EB00704C75 /* Main.storyboard */,
 				A2EBB5792ADFE6EB00704C75 /* ViewController.swift */,
@@ -146,6 +149,7 @@
 				A2EBB57A2ADFE6EB00704C75 /* ViewController.swift in Sources */,
 				82C221782AEBA28C0054C5AC /* CrearCuenta.swift in Sources */,
 				82C221752AEBA2160054C5AC /* PantallaBienvenida.swift in Sources */,
+				828D6FC52B84BB7A00DE3E18 /* PantallaLoginViewController.swift in Sources */,
 				A2EBB5762ADFE6EB00704C75 /* AppDelegate.swift in Sources */,
 				A2EBB5782ADFE6EB00704C75 /* SceneDelegate.swift in Sources */,
 			);

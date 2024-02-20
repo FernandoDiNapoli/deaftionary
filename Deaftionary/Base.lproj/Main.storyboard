@@ -50,8 +50,8 @@
                                     <segue destination="FGt-2U-xIA" kind="presentation" modalPresentationStyle="fullScreen" id="4gx-pe-UgU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdB-yC-eP3">
-                                <rect key="frame" x="120" y="631" width="174" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdB-yC-eP3">
+                                <rect key="frame" x="120" y="630" width="174" height="30"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <state key="normal" title="Crear usuario">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -411,7 +411,6 @@
         <!--PantallaAprender-->
         <scene sceneID="fx8-fh-9Cs">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uQ9-Td-eYg" sceneMemberID="firstResponder"/>
                 <viewController title="PantallaAprender" id="axe-BP-NlM" customClass="PantallaBienvenida" customModule="Deaftionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vTQ-Ua-pPv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -460,12 +459,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="fwu-as-yZd"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uQ9-Td-eYg" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="993" y="-593"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ViW-Kq-g1o"/>
+        <segue reference="4gx-pe-UgU"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
