@@ -12,7 +12,7 @@
         <!--PantallaLogin-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="PantallaLogin" id="BYZ-38-t0r" customClass="ViewController" customModule="Deaftionary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PantallaLogin" id="BYZ-38-t0r" customClass="PantallaLoginViewController" customModule="Deaftionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,7 +47,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FGt-2U-xIA" kind="presentation" modalPresentationStyle="fullScreen" id="4gx-pe-UgU"/>
+                                    <action selector="onLoginButtonClickWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qed-Q4-ciQ"/>
+                                    <segue destination="FGt-2U-xIA" kind="presentation" identifier="toPantallaBienvenida" modalPresentationStyle="fullScreen" id="uar-X1-aT4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdB-yC-eP3">
@@ -57,7 +58,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qSt-zG-xrU" kind="presentation" modalPresentationStyle="fullScreen" id="AWG-7B-FT2"/>
+                                    <segue destination="qSt-zG-xrU" kind="presentation" modalPresentationStyle="fullScreen" id="Ofq-tu-HXr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -82,6 +83,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7VN-UK-dxU"/>
+                    <connections>
+                        <outlet property="contraseñaTextField" destination="iQ6-C5-mhN" id="4kx-Xf-ikD"/>
+                        <outlet property="usuarioTextField" destination="IpC-hP-Nxk" id="hXO-20-HOS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -124,13 +129,6 @@
                                     <segue destination="NvO-i5-MUc" kind="presentation" modalPresentationStyle="fullScreen" id="CNK-BX-Nhy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8p-g2-hqT">
-                                <rect key="frame" x="50" y="114" width="114" height="30"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Volver">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyP-Rg-id5">
                                 <rect key="frame" x="100" y="582" width="214" height="30"/>
                                 <color key="backgroundColor" name="AccentColor"/>
@@ -145,8 +143,6 @@
                         <viewLayoutGuide key="safeArea" id="1ZC-Sc-lMP"/>
                         <color key="backgroundColor" red="0.29647122879999999" green="0.90296118810000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="L8p-g2-hqT" firstAttribute="leading" secondItem="1ZC-Sc-lMP" secondAttribute="leading" constant="50" id="39o-gT-c3O"/>
-                            <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="L8p-g2-hqT" secondAttribute="trailing" constant="250" id="3um-fL-DKJ"/>
                             <constraint firstItem="bzH-vv-6pq" firstAttribute="top" secondItem="1ZC-Sc-lMP" secondAttribute="top" constant="150" id="7jI-E4-ozN"/>
                             <constraint firstItem="lyP-Rg-id5" firstAttribute="top" secondItem="u2e-5D-OrQ" secondAttribute="bottom" constant="45" id="Ad3-tE-PeC"/>
                             <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="pVS-GD-6Fd" secondAttribute="trailing" constant="50" id="Lrz-0h-3jZ"/>
@@ -158,7 +154,6 @@
                             <constraint firstItem="1ZC-Sc-lMP" firstAttribute="bottom" secondItem="lyP-Rg-id5" secondAttribute="bottom" constant="250" id="h4F-QD-2gp"/>
                             <constraint firstItem="pVS-GD-6Fd" firstAttribute="leading" secondItem="1ZC-Sc-lMP" secondAttribute="leading" constant="50" id="leu-19-Etp"/>
                             <constraint firstItem="u2e-5D-OrQ" firstAttribute="leading" secondItem="1ZC-Sc-lMP" secondAttribute="leading" constant="100" id="noS-Eb-C8j"/>
-                            <constraint firstItem="L8p-g2-hqT" firstAttribute="top" secondItem="1ZC-Sc-lMP" secondAttribute="top" constant="70" id="uwj-qj-sgF"/>
                             <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="u2e-5D-OrQ" secondAttribute="trailing" constant="100" id="vJA-Ka-2Ve"/>
                         </constraints>
                     </view>
@@ -298,6 +293,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="onContinuarButtonClickWith_sender:" destination="qSt-zG-xrU" eventType="touchUpInside" id="Bbj-eF-t0t"/>
                                     <segue destination="FGt-2U-xIA" kind="presentation" modalPresentationStyle="fullScreen" id="ViW-Kq-g1o"/>
                                 </connections>
                             </button>
@@ -339,6 +335,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="P1i-gr-Ssw"/>
+                    <connections>
+                        <outlet property="apellidoTextField" destination="SBk-PQ-e9K" id="IxF-YJ-fu8"/>
+                        <outlet property="contraseñaTextField" destination="K9X-PC-zKw" id="jNa-4q-FzL"/>
+                        <outlet property="edadTextField" destination="FpB-GL-Ttm" id="6LO-vl-nP2"/>
+                        <outlet property="emailTextField" destination="Tut-VI-zzY" id="ykY-2Q-VIV"/>
+                        <outlet property="nombreTextField" destination="DVD-om-PWd" id="c2w-SM-eoI"/>
+                        <outlet property="sexoTextField" destination="C71-Td-fvR" id="iwO-ZT-ta0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1mV-sE-Oe7" sceneMemberID="firstResponder"/>
             </objects>
@@ -465,7 +469,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4gx-pe-UgU"/>
+        <segue reference="ViW-Kq-g1o"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">

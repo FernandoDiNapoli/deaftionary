@@ -8,7 +8,6 @@
 import UIKit
 
 class PantallaLoginViewController: UIViewController {
-
     @IBOutlet weak var usuarioTextField: UITextField!
     @IBOutlet weak var contraseñaTextField: UITextField!
     
@@ -18,7 +17,7 @@ class PantallaLoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func onLoginButtonClick(_sender: UIButton){
+    @IBAction func onLoginButtonClick(_sender: Any){
         let usuario = usuarioTextField.text
         let contraseña = contraseñaTextField.text
         
@@ -37,5 +36,7 @@ class PantallaLoginViewController: UIViewController {
     func error(){
         usuarioTextField.textColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0, alpha: 1)
         contraseñaTextField.textColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0, alpha: 1)
+        print("El usuario o contraseña son incorrectos! Por favor revisa estos campos")
 }
+
 }
