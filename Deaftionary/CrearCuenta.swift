@@ -13,7 +13,7 @@ class CrearCuenta: UIViewController {
     @IBOutlet weak var edadTextField: UITextField!
     @IBOutlet weak var sexoTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var contraseñaTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
 
     override func viewDidLoad() {
@@ -24,11 +24,11 @@ class CrearCuenta: UIViewController {
     @IBAction func onContinuarButtonClick(_sender: Any)
     {
         let nombre = nombreTextField.text
-        let apellido = apellidoTextField
-        let edad = edadTextField
-        let sexo = sexoTextField
-        let email = emailTextField
-        let contraseña = contraseñaTextField
+        let apellido = apellidoTextField.text
+        let edad = edadTextField.text
+        let sexo = sexoTextField.text
+        let email = emailTextField.text
+        let contraseña = passwordTextField.text
         
    
         }

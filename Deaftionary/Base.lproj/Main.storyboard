@@ -48,7 +48,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onLoginButtonClickWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qed-Q4-ciQ"/>
-                                    <segue destination="FGt-2U-xIA" kind="presentation" identifier="toPantallaBienvenida" modalPresentationStyle="fullScreen" id="uar-X1-aT4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdB-yC-eP3">
@@ -86,6 +85,7 @@
                     <connections>
                         <outlet property="contraseñaTextField" destination="iQ6-C5-mhN" id="4kx-Xf-ikD"/>
                         <outlet property="usuarioTextField" destination="IpC-hP-Nxk" id="hXO-20-HOS"/>
+                        <segue destination="FGt-2U-xIA" kind="presentation" identifier="toPantallaBienvenida" modalPresentationStyle="fullScreen" id="cBm-Ai-Kgf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -469,7 +469,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ViW-Kq-g1o"/>
+        <segue reference="cBm-Ai-Kgf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">

@@ -21,7 +21,7 @@ class PantallaLoginViewController: UIViewController {
         let usuario = usuarioTextField.text
         let contraseña = contraseñaTextField.text
         
-        if usuario == "fernando" && contraseña == "12345"{
+        if usuario == "Fernando" && contraseña == "12345"{
             loginOk()
         } else {
             error()
@@ -36,7 +36,7 @@ class PantallaLoginViewController: UIViewController {
     func error(){
         usuarioTextField.textColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0, alpha: 1)
         contraseñaTextField.textColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0, alpha: 1)
-        print("El usuario o contraseña son incorrectos! Por favor revisa estos campos")
+        
 }
 
 }
