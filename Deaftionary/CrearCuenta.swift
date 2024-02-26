@@ -7,8 +7,6 @@
 
 import UIKit
 
-class CrearCuenta: UIViewController {
-    @IBAction func onCrearCieButtonClick(_sender: Any){
-        performSegue(withIdentifier: "PantallaABCS", sender: nil)    }
-}
+class  CrearCuentaViewController: UIViewController {
     
+}

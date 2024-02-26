@@ -28,6 +28,11 @@ class PantallaLoginViewController: UIViewController {
         }
     }
     
+   @IBAction func
+   onCrearUsuarioButtonClick(_sender: Any){
+    performSegue(withIdentifier: "CrearCuenta", sender: nil)
+   }
+    
     func loginOk(){
         UserDefaults.standard.set(usuarioTextField.text,forKey: "usuario")
         performSegue(withIdentifier: "toPantallaBienvenida", sender: nil)

@@ -57,7 +57,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qSt-zG-xrU" kind="presentation" identifier="CrearUsuario" modalPresentationStyle="fullScreen" id="Ofq-tu-HXr"/>
+                                    <action selector="onCrearUsuarioButtonClickWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mx6-9V-YQf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,6 +86,7 @@
                         <outlet property="contraseñaTextField" destination="iQ6-C5-mhN" id="4kx-Xf-ikD"/>
                         <outlet property="usuarioTextField" destination="IpC-hP-Nxk" id="hXO-20-HOS"/>
                         <segue destination="FGt-2U-xIA" kind="presentation" identifier="toPantallaBienvenida" modalPresentationStyle="fullScreen" id="cBm-Ai-Kgf"/>
+                        <segue destination="qSt-zG-xrU" kind="presentation" identifier="CrearCuenta" modalPresentationStyle="fullScreen" id="U1X-Al-MfQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -112,8 +113,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyP-Rg-id5">
-                                <rect key="frame" x="100" y="582" width="214" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyP-Rg-id5">
+                                <rect key="frame" x="100" y="581.5" width="214" height="30.5"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <state key="normal" title="Traducciones favoritas">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -122,8 +123,8 @@
                                     <segue destination="4IL-v3-A9A" kind="presentation" modalPresentationStyle="fullScreen" id="3Ii-sn-9JC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="be4-Oo-CUZ">
-                                <rect key="frame" x="100" y="492" width="214" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="be4-Oo-CUZ">
+                                <rect key="frame" x="100" y="491.5" width="214" height="30"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <state key="normal" title="Traducir">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -327,15 +328,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="P1i-gr-Ssw"/>
-                    <connections>
-                        <outlet property="apellidoTextField" destination="SBk-PQ-e9K" id="IxF-YJ-fu8"/>
-                        <outlet property="contraseñaTextField" destination="K9X-PC-zKw" id="jNa-4q-FzL"/>
-                        <outlet property="edadTextField" destination="FpB-GL-Ttm" id="6LO-vl-nP2"/>
-                        <outlet property="emailTextField" destination="Tut-VI-zzY" id="ykY-2Q-VIV"/>
-                        <outlet property="nombreTextField" destination="DVD-om-PWd" id="c2w-SM-eoI"/>
-                        <outlet property="passwordTextField" destination="K9X-PC-zKw" id="XT5-FH-ZMT"/>
-                        <outlet property="sexoTextField" destination="C71-Td-fvR" id="iwO-ZT-ta0"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1mV-sE-Oe7" sceneMemberID="firstResponder"/>
             </objects>
@@ -462,7 +454,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wo3-8N-7Hw"/>
+        <segue reference="ViW-Kq-g1o"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
