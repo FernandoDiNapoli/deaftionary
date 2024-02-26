@@ -57,7 +57,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qSt-zG-xrU" kind="presentation" modalPresentationStyle="fullScreen" id="Ofq-tu-HXr"/>
+                                    <segue destination="qSt-zG-xrU" kind="presentation" identifier="CrearUsuario" modalPresentationStyle="fullScreen" id="Ofq-tu-HXr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -100,13 +100,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qup-42-PoV">
-                                <rect key="frame" x="186" y="355" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido a Deaftionary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzH-vv-6pq">
                                 <rect key="frame" x="20" y="194" width="374" height="38.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
@@ -119,17 +112,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2e-5D-OrQ">
-                                <rect key="frame" x="100" y="507" width="214" height="30"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <state key="normal" title="Traducir">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="NvO-i5-MUc" kind="presentation" modalPresentationStyle="fullScreen" id="CNK-BX-Nhy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyP-Rg-id5">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyP-Rg-id5">
                                 <rect key="frame" x="100" y="582" width="214" height="30"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <state key="normal" title="Traducciones favoritas">
@@ -139,22 +122,34 @@
                                     <segue destination="4IL-v3-A9A" kind="presentation" modalPresentationStyle="fullScreen" id="3Ii-sn-9JC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="be4-Oo-CUZ">
+                                <rect key="frame" x="100" y="492" width="214" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Traducir">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTraducirButtonClickWith_sender:" destination="FGt-2U-xIA" eventType="touchUpInside" id="3ug-UW-L0v"/>
+                                    <segue destination="NvO-i5-MUc" kind="presentation" identifier="PantallaABCS" modalPresentationStyle="fullScreen" id="PRK-Nc-vds"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1ZC-Sc-lMP"/>
                         <color key="backgroundColor" red="0.29647122879999999" green="0.90296118810000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bzH-vv-6pq" firstAttribute="top" secondItem="1ZC-Sc-lMP" secondAttribute="top" constant="150" id="7jI-E4-ozN"/>
-                            <constraint firstItem="lyP-Rg-id5" firstAttribute="top" secondItem="u2e-5D-OrQ" secondAttribute="bottom" constant="45" id="Ad3-tE-PeC"/>
+                            <constraint firstItem="be4-Oo-CUZ" firstAttribute="top" secondItem="pVS-GD-6Fd" secondAttribute="bottom" constant="200" id="A4v-Lc-IK0"/>
+                            <constraint firstItem="lyP-Rg-id5" firstAttribute="top" secondItem="be4-Oo-CUZ" secondAttribute="bottom" constant="60" id="DgR-B8-p7o"/>
                             <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="pVS-GD-6Fd" secondAttribute="trailing" constant="50" id="Lrz-0h-3jZ"/>
                             <constraint firstItem="bzH-vv-6pq" firstAttribute="leading" secondItem="1ZC-Sc-lMP" secondAttribute="leading" constant="20" id="Lyq-hy-KaX"/>
                             <constraint firstItem="lyP-Rg-id5" firstAttribute="leading" secondItem="1ZC-Sc-lMP" secondAttribute="leading" constant="100" id="QUt-vX-yrj"/>
+                            <constraint firstItem="be4-Oo-CUZ" firstAttribute="leading" secondItem="1ZC-Sc-lMP" secondAttribute="leading" constant="100" id="RDF-0W-x5p"/>
                             <constraint firstItem="pVS-GD-6Fd" firstAttribute="top" secondItem="bzH-vv-6pq" secondAttribute="bottom" constant="30" id="XgT-ug-cXn"/>
                             <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="bzH-vv-6pq" secondAttribute="trailing" constant="20" id="b9N-Bf-2k1"/>
+                            <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="be4-Oo-CUZ" secondAttribute="trailing" constant="100" id="cSH-HW-qZt"/>
                             <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="lyP-Rg-id5" secondAttribute="trailing" constant="100" id="e4r-y8-Ppb"/>
                             <constraint firstItem="1ZC-Sc-lMP" firstAttribute="bottom" secondItem="lyP-Rg-id5" secondAttribute="bottom" constant="250" id="h4F-QD-2gp"/>
                             <constraint firstItem="pVS-GD-6Fd" firstAttribute="leading" secondItem="1ZC-Sc-lMP" secondAttribute="leading" constant="50" id="leu-19-Etp"/>
-                            <constraint firstItem="u2e-5D-OrQ" firstAttribute="leading" secondItem="1ZC-Sc-lMP" secondAttribute="leading" constant="100" id="noS-Eb-C8j"/>
-                            <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="u2e-5D-OrQ" secondAttribute="trailing" constant="100" id="vJA-Ka-2Ve"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="S8t-Du-Bq5"/>
@@ -190,9 +185,6 @@
                                 <state key="normal" title="Volver">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="FGt-2U-xIA" kind="presentation" modalPresentationStyle="fullScreen" id="zpM-Vg-SFE"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Que deseas traducir?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4M-Sz-eRy">
                                 <rect key="frame" x="50" y="262.5" width="314" height="29"/>
@@ -341,6 +333,7 @@
                         <outlet property="edadTextField" destination="FpB-GL-Ttm" id="6LO-vl-nP2"/>
                         <outlet property="emailTextField" destination="Tut-VI-zzY" id="ykY-2Q-VIV"/>
                         <outlet property="nombreTextField" destination="DVD-om-PWd" id="c2w-SM-eoI"/>
+                        <outlet property="passwordTextField" destination="K9X-PC-zKw" id="XT5-FH-ZMT"/>
                         <outlet property="sexoTextField" destination="C71-Td-fvR" id="iwO-ZT-ta0"/>
                     </connections>
                 </viewController>
@@ -469,7 +462,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cBm-Ai-Kgf"/>
+        <segue reference="wo3-8N-7Hw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
