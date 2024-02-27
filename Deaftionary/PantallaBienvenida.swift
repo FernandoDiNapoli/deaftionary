@@ -19,4 +19,8 @@ class PantallaBienvenida: UIViewController {
     @IBAction func onTraducirButtonClick(_sender: Any){
         performSegue(withIdentifier: "PantallaABCS", sender: nil)
     }
+    
+    @IBAction func onTraduccionesFav(_sender: Any){
+        performSegue(withIdentifier: "Favoritas", sender: nil)
+    }
 }

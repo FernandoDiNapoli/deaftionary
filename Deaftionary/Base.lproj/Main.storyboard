@@ -114,17 +114,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyP-Rg-id5">
-                                <rect key="frame" x="100" y="581.5" width="214" height="30.5"/>
+                                <rect key="frame" x="100" y="582" width="214" height="30"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <state key="normal" title="Traducciones favoritas">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4IL-v3-A9A" kind="presentation" modalPresentationStyle="fullScreen" id="3Ii-sn-9JC"/>
+                                    <action selector="onTraduccionesFavWith_sender:" destination="FGt-2U-xIA" eventType="touchUpInside" id="RWN-BZ-VSN"/>
+                                    <segue destination="4IL-v3-A9A" kind="presentation" identifier="Favoritas" modalPresentationStyle="fullScreen" id="3Ii-sn-9JC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="be4-Oo-CUZ">
-                                <rect key="frame" x="100" y="491.5" width="214" height="30"/>
+                                <rect key="frame" x="100" y="492" width="214" height="30"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <state key="normal" title="Traducir">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -139,7 +140,6 @@
                         <color key="backgroundColor" red="0.29647122879999999" green="0.90296118810000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bzH-vv-6pq" firstAttribute="top" secondItem="1ZC-Sc-lMP" secondAttribute="top" constant="150" id="7jI-E4-ozN"/>
-                            <constraint firstItem="be4-Oo-CUZ" firstAttribute="top" secondItem="pVS-GD-6Fd" secondAttribute="bottom" constant="200" id="A4v-Lc-IK0"/>
                             <constraint firstItem="lyP-Rg-id5" firstAttribute="top" secondItem="be4-Oo-CUZ" secondAttribute="bottom" constant="60" id="DgR-B8-p7o"/>
                             <constraint firstItem="1ZC-Sc-lMP" firstAttribute="trailing" secondItem="pVS-GD-6Fd" secondAttribute="trailing" constant="50" id="Lrz-0h-3jZ"/>
                             <constraint firstItem="bzH-vv-6pq" firstAttribute="leading" secondItem="1ZC-Sc-lMP" secondAttribute="leading" constant="20" id="Lyq-hy-KaX"/>
@@ -162,7 +162,7 @@
         <!--PantallaABCS-->
         <scene sceneID="lcp-Ba-cFs">
             <objects>
-                <viewController title="PantallaABCS" id="NvO-i5-MUc" customClass="PantallaBienvenida" customModule="Deaftionary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PantallaABCS" id="NvO-i5-MUc" customClass="PantallaABCViewController" customModule="Deaftionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="om6-3P-QhT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,6 +186,9 @@
                                 <state key="normal" title="Volver">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onVolverButtonClickWith_sender:" destination="NvO-i5-MUc" eventType="touchUpInside" id="uyh-TY-70U"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Que deseas traducir?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4M-Sz-eRy">
                                 <rect key="frame" x="50" y="262.5" width="314" height="29"/>
@@ -229,6 +232,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8wF-ZC-kj0"/>
+                    <connections>
+                        <segue destination="FGt-2U-xIA" kind="presentation" identifier="VolverABienvenida" modalPresentationStyle="fullScreen" id="Mnh-TC-J1c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OC5-Gb-vJJ" sceneMemberID="firstResponder"/>
             </objects>
@@ -237,7 +243,7 @@
         <!--CrearCuenta-->
         <scene sceneID="mdK-vH-nvp">
             <objects>
-                <viewController title="CrearCuenta" id="qSt-zG-xrU" customClass="CrearCuenta" customModule="Deaftionary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="CrearCuenta" id="qSt-zG-xrU" customClass="CrearCuentaViewController" customModule="Deaftionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tw6-mU-mX3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -286,8 +292,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="onContinuarButtonClickWith_sender:" destination="qSt-zG-xrU" eventType="touchUpInside" id="Bbj-eF-t0t"/>
-                                    <segue destination="FGt-2U-xIA" kind="presentation" modalPresentationStyle="fullScreen" id="ViW-Kq-g1o"/>
+                                    <action selector="onContinuarButtonClickWith_sender:" destination="qSt-zG-xrU" eventType="touchUpInside" id="emi-4d-2Wu"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K9X-PC-zKw">
@@ -328,6 +333,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="P1i-gr-Ssw"/>
+                    <connections>
+                        <segue destination="FGt-2U-xIA" kind="presentation" identifier="Continuar" modalPresentationStyle="fullScreen" id="GDl-Da-BIv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1mV-sE-Oe7" sceneMemberID="firstResponder"/>
             </objects>
@@ -336,7 +344,7 @@
         <!--PantallaFavoritos-->
         <scene sceneID="Ed5-gK-3l9">
             <objects>
-                <viewController title="PantallaFavoritos" id="4IL-v3-A9A" customClass="CrearCuenta" customModule="Deaftionary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PantallaFavoritos" id="4IL-v3-A9A" customClass="PantallaFavoritosViewController" customModule="Deaftionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zBu-Du-kaf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -354,7 +362,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FGt-2U-xIA" kind="presentation" modalPresentationStyle="fullScreen" id="wo3-8N-7Hw"/>
+                                    <action selector="onVolverButtonClickWith_sender:" destination="4IL-v3-A9A" eventType="touchUpInside" id="Wz0-fg-CvB"/>
+                                    <segue destination="FGt-2U-xIA" kind="presentation" identifier="VolverBienvenida" modalPresentationStyle="fullScreen" id="wo3-8N-7Hw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estas son tus traducciones guardadas como favoritas!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTm-w5-cJo">
@@ -397,64 +406,9 @@
             </objects>
             <point key="canvasLocation" x="993" y="799"/>
         </scene>
-        <!--PantallaAprender-->
-        <scene sceneID="fx8-fh-9Cs">
-            <objects>
-                <viewController title="PantallaAprender" id="axe-BP-NlM" customClass="PantallaBienvenida" customModule="Deaftionary" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vTQ-Ua-pPv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estas son tus lecciones disponibles!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hin-pC-G8v">
-                                <rect key="frame" x="20" y="194" width="374" height="76.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lze-VU-Hhh">
-                                <rect key="frame" x="50" y="114" width="114" height="30"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Volver">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="FGt-2U-xIA" kind="presentation" modalPresentationStyle="fullScreen" id="9Lz-0P-76e"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbB-2s-ths">
-                                <rect key="frame" x="314" y="114" width="70" height="30"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Salir">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="qHX-uM-Kbl"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="oMS-tm-4dQ"/>
-                        <color key="backgroundColor" red="0.29647122879999999" green="0.90296118810000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="oMS-tm-4dQ" firstAttribute="trailing" secondItem="Hin-pC-G8v" secondAttribute="trailing" constant="20" id="5VQ-oA-awS"/>
-                            <constraint firstItem="Hin-pC-G8v" firstAttribute="leading" secondItem="oMS-tm-4dQ" secondAttribute="leading" constant="20" id="7Wr-4B-nac"/>
-                            <constraint firstItem="lze-VU-Hhh" firstAttribute="leading" secondItem="oMS-tm-4dQ" secondAttribute="leading" constant="50" id="BEN-9e-rCe"/>
-                            <constraint firstItem="Hin-pC-G8v" firstAttribute="top" secondItem="oMS-tm-4dQ" secondAttribute="top" constant="150" id="GHK-dt-Fex"/>
-                            <constraint firstItem="oMS-tm-4dQ" firstAttribute="trailing" secondItem="lze-VU-Hhh" secondAttribute="trailing" constant="250" id="K0O-Ka-dNo"/>
-                            <constraint firstItem="nbB-2s-ths" firstAttribute="leading" secondItem="lze-VU-Hhh" secondAttribute="trailing" constant="150" id="K6B-6q-p3h"/>
-                            <constraint firstItem="oMS-tm-4dQ" firstAttribute="trailing" secondItem="nbB-2s-ths" secondAttribute="trailing" constant="30" id="XW5-Lh-z4j"/>
-                            <constraint firstItem="nbB-2s-ths" firstAttribute="top" secondItem="oMS-tm-4dQ" secondAttribute="top" constant="70" id="nHj-mz-y19"/>
-                            <constraint firstItem="lze-VU-Hhh" firstAttribute="top" secondItem="oMS-tm-4dQ" secondAttribute="top" constant="70" id="r66-Iu-XdW"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="fwu-as-yZd"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uQ9-Td-eYg" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="993" y="-593"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ViW-Kq-g1o"/>
+        <segue reference="GDl-Da-BIv"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">

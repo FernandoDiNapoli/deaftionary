@@ -39,8 +39,8 @@ class PantallaLoginViewController: UIViewController {
     }
     
     func error(){
-        usuarioTextField.textColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0, alpha: 1)
-        contraseñaTextField.textColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0, alpha: 1)
+        usuarioTextField.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0, alpha: 1)
+        contraseñaTextField.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0, alpha: 1)
         
 }
 

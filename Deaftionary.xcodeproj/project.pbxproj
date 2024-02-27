@@ -10,6 +10,8 @@
 		828D6FC52B84BB7A00DE3E18 /* PantallaLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828D6FC42B84BB7A00DE3E18 /* PantallaLoginViewController.swift */; };
 		82C221752AEBA2160054C5AC /* PantallaBienvenida.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C221742AEBA2160054C5AC /* PantallaBienvenida.swift */; };
 		82C221782AEBA28C0054C5AC /* CrearCuenta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C221772AEBA28C0054C5AC /* CrearCuenta.swift */; };
+		82C33D672B8DFACB00DDE9D8 /* PantallaFavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C33D662B8DFACB00DDE9D8 /* PantallaFavoritosViewController.swift */; };
+		82C33D6A2B8DFB7000DDE9D8 /* PantallaABCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C33D692B8DFB7000DDE9D8 /* PantallaABCViewController.swift */; };
 		A2EBB5762ADFE6EB00704C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EBB5752ADFE6EB00704C75 /* AppDelegate.swift */; };
 		A2EBB5782ADFE6EB00704C75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EBB5772ADFE6EB00704C75 /* SceneDelegate.swift */; };
 		A2EBB57A2ADFE6EB00704C75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EBB5792ADFE6EB00704C75 /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 		828D6FC42B84BB7A00DE3E18 /* PantallaLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaLoginViewController.swift; sourceTree = "<group>"; };
 		82C221742AEBA2160054C5AC /* PantallaBienvenida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaBienvenida.swift; sourceTree = "<group>"; };
 		82C221772AEBA28C0054C5AC /* CrearCuenta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearCuenta.swift; sourceTree = "<group>"; };
+		82C33D662B8DFACB00DDE9D8 /* PantallaFavoritosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaFavoritosViewController.swift; sourceTree = "<group>"; };
+		82C33D692B8DFB7000DDE9D8 /* PantallaABCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaABCViewController.swift; sourceTree = "<group>"; };
 		A2EBB5722ADFE6EB00704C75 /* Deaftionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deaftionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2EBB5752ADFE6EB00704C75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2EBB5772ADFE6EB00704C75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,9 +69,11 @@
 				A2EBB5752ADFE6EB00704C75 /* AppDelegate.swift */,
 				828D6FC42B84BB7A00DE3E18 /* PantallaLoginViewController.swift */,
 				A2EBB5772ADFE6EB00704C75 /* SceneDelegate.swift */,
+				82C33D692B8DFB7000DDE9D8 /* PantallaABCViewController.swift */,
 				A2EBB57B2ADFE6EB00704C75 /* Main.storyboard */,
 				A2EBB5792ADFE6EB00704C75 /* ViewController.swift */,
 				82C221772AEBA28C0054C5AC /* CrearCuenta.swift */,
+				82C33D662B8DFACB00DDE9D8 /* PantallaFavoritosViewController.swift */,
 				82C221742AEBA2160054C5AC /* PantallaBienvenida.swift */,
 				A2EBB57E2ADFE6ED00704C75 /* Assets.xcassets */,
 				A2EBB5802ADFE6ED00704C75 /* LaunchScreen.storyboard */,
@@ -150,7 +156,9 @@
 				82C221782AEBA28C0054C5AC /* CrearCuenta.swift in Sources */,
 				82C221752AEBA2160054C5AC /* PantallaBienvenida.swift in Sources */,
 				828D6FC52B84BB7A00DE3E18 /* PantallaLoginViewController.swift in Sources */,
+				82C33D6A2B8DFB7000DDE9D8 /* PantallaABCViewController.swift in Sources */,
 				A2EBB5762ADFE6EB00704C75 /* AppDelegate.swift in Sources */,
+				82C33D672B8DFACB00DDE9D8 /* PantallaFavoritosViewController.swift in Sources */,
 				A2EBB5782ADFE6EB00704C75 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
