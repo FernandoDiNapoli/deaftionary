@@ -8,6 +8,7 @@
 import UIKit
 
 class PantallaLoginViewController: UIViewController {
+
     @IBOutlet weak var usuarioTextField: UITextField!
     @IBOutlet weak var contraseñaTextField: UITextField!
     
@@ -16,6 +17,7 @@ class PantallaLoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
     
     @IBAction func onLoginButtonClick(_sender: Any){
         let usuario = usuarioTextField.text

@@ -60,9 +60,13 @@
                                     <action selector="onCrearUsuarioButtonClickWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mx6-9V-YQf"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LogoFinal1" translatesAutoresizingMaskIntoConstraints="NO" id="0zn-ZN-Fn0">
+                                <rect key="frame" x="87" y="241" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.29647122878024035" green="0.90296118814368942" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.30196078431372547" green="0.90196078431372551" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="iQ6-C5-mhN" firstAttribute="top" secondItem="IpC-hP-Nxk" secondAttribute="bottom" constant="50" id="5jF-Jz-c8c"/>
                             <constraint firstItem="8Rx-01-ZSh" firstAttribute="top" secondItem="iQ6-C5-mhN" secondAttribute="bottom" constant="80" id="9sQ-8U-qnP"/>
@@ -408,9 +412,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="GDl-Da-BIv"/>
+        <segue reference="cBm-Ai-Kgf"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="LogoFinal1" width="282" height="275"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
