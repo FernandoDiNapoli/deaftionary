@@ -213,6 +213,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" name="AccentColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="onTraducirButtonClickWith_sender:" destination="NvO-i5-MUc" eventType="touchUpInside" id="YXF-wH-NHA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l64-iJ-bD9"/>
@@ -268,9 +271,6 @@
                                 <rect key="frame" x="90" y="283" width="234" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="onContinuarButtonClickWith_sender:" destination="qSt-zG-xrU" eventType="editingDidEnd" id="aYt-11-RYw"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellido" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SBk-PQ-e9K">
                                 <rect key="frame" x="90" y="347" width="234" height="34"/>
@@ -421,7 +421,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cBm-Ai-Kgf"/>
+        <segue reference="Mnh-TC-J1c"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="LogoFinal1" width="282" height="275"/>
