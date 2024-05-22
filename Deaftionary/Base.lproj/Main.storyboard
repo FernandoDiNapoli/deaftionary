@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -206,7 +207,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqk-ae-47l">
-                                <rect key="frame" x="70" y="605.5" width="274" height="29"/>
+                                <rect key="frame" x="70" y="605" width="274" height="29"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Traducir">
@@ -214,7 +215,7 @@
                                     <color key="titleShadowColor" name="AccentColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="onTraducirButtonClickWith_sender:" destination="NvO-i5-MUc" eventType="touchUpInside" id="YXF-wH-NHA"/>
+                                    <action selector="translateButtonTapped:" destination="NvO-i5-MUc" eventType="touchUpInside" id="rPJ-KR-AQm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -240,6 +241,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="8wF-ZC-kj0"/>
                     <connections>
+                        <outlet property="imagesContainerView" destination="om6-3P-QhT" id="gvd-A0-etg"/>
+                        <outlet property="textField" destination="iBn-0s-L6N" id="DGe-T6-FNh"/>
                         <segue destination="FGt-2U-xIA" kind="presentation" identifier="VolverABienvenida" modalPresentationStyle="fullScreen" id="Mnh-TC-J1c"/>
                     </connections>
                 </viewController>
