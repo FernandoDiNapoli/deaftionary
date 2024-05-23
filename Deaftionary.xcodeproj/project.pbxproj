@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FC13F2E2BFF721E0037870A /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC13F2D2BFF721E0037870A /* AuthManager.swift */; };
 		828D6FC52B84BB7A00DE3E18 /* PantallaLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828D6FC42B84BB7A00DE3E18 /* PantallaLoginViewController.swift */; };
 		82C221752AEBA2160054C5AC /* PantallaBienvenida.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C221742AEBA2160054C5AC /* PantallaBienvenida.swift */; };
 		82C221782AEBA28C0054C5AC /* CrearCuenta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C221772AEBA28C0054C5AC /* CrearCuenta.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7FC13F2D2BFF721E0037870A /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		828D6FC42B84BB7A00DE3E18 /* PantallaLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaLoginViewController.swift; sourceTree = "<group>"; };
 		82C221742AEBA2160054C5AC /* PantallaBienvenida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaBienvenida.swift; sourceTree = "<group>"; };
 		82C221772AEBA28C0054C5AC /* CrearCuenta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearCuenta.swift; sourceTree = "<group>"; };
@@ -66,9 +68,9 @@
 		A2EBB5742ADFE6EB00704C75 /* Deaftionary */ = {
 			isa = PBXGroup;
 			children = (
+				A2EBB5772ADFE6EB00704C75 /* SceneDelegate.swift */,
 				A2EBB5752ADFE6EB00704C75 /* AppDelegate.swift */,
 				828D6FC42B84BB7A00DE3E18 /* PantallaLoginViewController.swift */,
-				A2EBB5772ADFE6EB00704C75 /* SceneDelegate.swift */,
 				82C33D692B8DFB7000DDE9D8 /* PantallaABCViewController.swift */,
 				A2EBB57B2ADFE6EB00704C75 /* Main.storyboard */,
 				A2EBB5792ADFE6EB00704C75 /* ViewController.swift */,
@@ -78,6 +80,7 @@
 				A2EBB57E2ADFE6ED00704C75 /* Assets.xcassets */,
 				A2EBB5802ADFE6ED00704C75 /* LaunchScreen.storyboard */,
 				A2EBB5832ADFE6ED00704C75 /* Info.plist */,
+				7FC13F2D2BFF721E0037870A /* AuthManager.swift */,
 			);
 			path = Deaftionary;
 			sourceTree = "<group>";
@@ -125,6 +128,8 @@
 				Base,
 			);
 			mainGroup = A2EBB5692ADFE6EB00704C75;
+			packageReferences = (
+			);
 			productRefGroup = A2EBB5732ADFE6EB00704C75 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -153,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2EBB57A2ADFE6EB00704C75 /* ViewController.swift in Sources */,
+				7FC13F2E2BFF721E0037870A /* AuthManager.swift in Sources */,
 				82C221782AEBA28C0054C5AC /* CrearCuenta.swift in Sources */,
 				82C221752AEBA2160054C5AC /* PantallaBienvenida.swift in Sources */,
 				828D6FC52B84BB7A00DE3E18 /* PantallaLoginViewController.swift in Sources */,
